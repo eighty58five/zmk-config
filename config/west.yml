@@ -7,9 +7,9 @@ manifest:
   projects:
     - name: zephyr
       remote: zmkfirmware
-      revision: v3.5.0+zmk-fixes
+      revision: main
       clone-depth: 1
-      import:
+      import: app/west.yml
         name-blocklist:
           - ci-tools
           - hal_altera
@@ -31,3 +31,4 @@ manifest:
           - trusted-firmware-m
   self:
     west-commands: scripts/west-commands.yml
+    path: config
