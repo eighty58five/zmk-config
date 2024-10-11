@@ -1,0 +1,2 @@
+config SHIELD_CLAUDIA
+  def_bool $(shield_list_contains, claudia)
